@@ -6,6 +6,8 @@ use std::{
 };
 use tokio::net::{TcpListener, TcpStream};
 
+// Followed along with https://tokio.rs/tokio/tutorial
+
 type Db = Arc<Mutex<HashMap<String, Bytes>>>;
 
 #[tokio::main]
